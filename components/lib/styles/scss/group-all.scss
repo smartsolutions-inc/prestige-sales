@@ -1,0 +1,14 @@
+html {
+    font: 500 14px/150% 'Open Sans', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #f0f0f0;
+}
+
+@import "_buttons.scss";
+ 

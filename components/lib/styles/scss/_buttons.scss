@@ -1,0 +1,116 @@
+:root {
+    --base-color: #0066ff;
+}
+
+$colors: (
+    sample: #ddd,
+    base: #0066ff,
+    err: tomato,
+    warning: #FBBA32
+);
+// BUTTON
+.btn {
+    padding: 0 16px;
+    height : 36px;
+    background : linear-gradient(
+        to left, map-get($colors, sample),
+        darken(map-get($colors, sample), 10%)
+    );
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius : 3px;
+    border: 0;
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, .1),
+        0 5px 15px rgba(0, 0, 0, .15);
+    transition: all .2s ease-in-out;
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        box-shadow:
+            0 5px 10px rgba(0, 0, 0, .1),
+            0 1px 5px rgba(0, 0, 0, .15);
+        background : linear-gradient(
+            to left, map-get($colors, sample),
+            darken(map-get($colors, sample), 15%)
+        );
+        transition: all .15s ease-in-out;
+    }
+}
+
+.primary--btn {
+    @extend .btn;
+    background : linear-gradient(
+        to left, map-get($colors, base),
+        darken(map-get($colors, base), 10%)
+    );
+    color: white;
+    &:active {
+        background : linear-gradient(
+            to left, map-get($colors, base),
+            darken(map-get($colors, base), 15%)
+        );
+        transition: all .15s ease-in-out;
+    }
+}
+
+.err--btn {
+    @extend .btn;
+    background : linear-gradient(
+        to left, map-get($colors, err),
+        darken(map-get($colors, err), 10%)
+    );
+    color: white;
+    &:active {
+        background : linear-gradient(
+            to left, map-get($colors, err),
+            darken(map-get($colors, err), 15%)
+        );
+        transition: all .15s ease-in-out;
+    }
+}
+
+.warning--btn {
+    @extend .btn;
+    background : linear-gradient(
+        to left, map-get($colors, warning),
+        darken(map-get($colors, warning), 10%)
+    );
+    color: white;
+    &:active {
+        background : linear-gradient(
+            to left, map-get($colors, warning),
+            darken(map-get($colors, warning), 15%)
+        );
+        transition: all .15s ease-in-out;
+    }
+}
+
+@function set-notification-text-color() {
+    @if( lightness(map-get($colors, base)) > 40 ) {
+        color: #000000;
+    } @else {
+        color: #ffffff;
+    }
+}
+
+
+
+
+
+
+
+// =============================================================================
+.li0:hover {
+    background : linear-gradient(
+        to left, map-get($colors, base),
+        darken(map-get($colors, base), 10%)
+    );
+    color: #fff;
+    cursor: pointer;
+}

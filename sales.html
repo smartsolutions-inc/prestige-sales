@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Sales system </title>
+    <link rel="stylesheet" href="components/lib/styles/css/group-all.css">
+</head>
+<body>
+
+    <div class="sales--plans-modules">
+
+        <div class="headeger--ribbon">
+
+            <nav>
+
+            </nav>
+
+        </div>
+
+        <div class="spc-hdr-tag">
+            <div class="currency-map-section">
+                <ul>
+                    <li class="li0">btc</li>
+                    <li class="li0">ltc</li>
+                    <li class="li0">eth</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="trading__signals-sales">
+            <div class="item--table">
+                <ul>
+                    <li class="action-tag">
+                        Basic
+                    </li>
+                    <li class="benefits-tag">
+                        <span data-set-benefits> - 1 month signals </span>
+                        <br><br>
+                        <span data-set-benefits> - lower trading crypto price </span>
+                    </li>
+                    <li class="price-tag">
+                        <span data-set-price> USD$0.005 </span>
+                    </li>
+                    <button class="primary--btn"> Get package </button>
+                </ul>
+            </div>
+            <div class="item--table">
+                <ul>
+                    <li class="action-tag">
+                        Enterprenaur
+                    </li>
+                    <li class="benefits-tag">
+                        <span data-set-benefits> - 3 month signals </span>
+                        <br><br>
+                        <span data-set-benefits> - lower trading crypto price </span>
+                    </li>
+                    <li class="price-tag">
+                        <span data-set-price> USD$150 </span>
+                    </li>
+                    <button class="primary--btn"> Get package </button>
+                </ul>
+            </div>
+            <div class="item--table">
+                <ul>
+                    <li class="action-tag">
+                        Business
+                    </li>
+                    <li class="benefits-tag">
+                        <span data-set-benefits> - 6 month signals </span>
+                        <br><br>
+                        <span data-set-benefits> - lower trading crypto price </span>
+                    </li>
+                    <li class="price-tag">
+                        <span data-set-price> USD$230 </span>
+                    </li>
+                    <button class="primary--btn"> Get package </button>
+                </ul>
+            </div>
+            <div class="item--table">
+                <ul>
+                    <li class="action-tag">
+                        Prestige
+                    </li>
+                    <li class="benefits-tag">
+                        <span data-set-benefits> - 1 year signals </span>
+                        <br><br>
+                        <span data-set-benefits> - lower trading crypto price </span>
+                    </li>
+                    <li class="price-tag">
+                        <span data-set-price> USD$300 </span>
+                    </li>
+                    <button class="warning--btn"> Get package </button>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-pad">
+
+    </div>
+
+    <style>
+        html {
+            font: 500 14px/150% 'Open Sans', sans-serif;
+        }
+
+        .footer-pad {
+            width: 100%;
+            height: 400px;
+            background-color: var(--pax-color);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --base-width: 1260px;
+
+            --pax-color:  #081221;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .currency-map-section {
+            width: 300px;
+            height: 54px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .currency-map-section > ul {
+            margin: 0;
+            padding: 0;
+            height: inherit;
+            list-style-type: none;
+            display: flex;
+        }
+
+        .currency-map-section > ul li {
+            display: inline-block;
+            width: 100px;
+            height: inherit;
+            text-align: center;
+            position: relative;
+            line-height: 54px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .currency-map-section > ul li::after {
+            content: '';
+            width: 1px;
+            height: 54px;
+            background-color: #ddd;
+            display: inline-block;
+            position: absolute;
+            right: 0;
+        }
+
+        .spc-hdr-tag {
+            width: var(--base-width);
+            height: auto;
+            margin: 0 auto;
+            padding: 32px 0;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .sales--plans-modules {
+            width: 100vw;
+            height: auto;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .headeger--ribbon {
+            width: 100%;
+            height: 128px;
+            background: #081221;
+        }
+
+        nav {
+            margin: 0 auto;
+            width: var(--base-width);
+            height: 128px;
+            background: #333;
+            line-height: 128px;
+        }
+
+        .trading__signals-sales {
+            width: 100%;
+            height: auto ;
+            margin: 0;
+            padding: 64px 0;
+            display: grid;
+            grid-template-columns: 280px 280px 280px 280px;
+            grid-gap: 48px;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .item--table {
+            border-radius: 3px;
+            border: 1px solid rgba(0, 0, 0, .095);
+            transition: all .15s ease-in-out;
+        }
+
+        .item--table:nth-child(2) {
+            background-color: #f5f5f5;
+            border: none;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, .09), 0 15px 30px rgba(0, 0, 0, .09);
+        }
+
+        .item--table:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            background: #fff;
+            box-shadow: 0 50px 100px rgba(0, 0, 0, .09), 0 35px 50px rgba(0, 0, 0, .09);
+        }
+
+        .item--table > ul {
+            margin: 0;
+            padding: 16px 32px;
+            list-style-type: none;
+        }
+
+        .item--table > ul li {
+            padding: 24px 0;
+            display: block;
+            width: 100%;
+            border-bottom: 1px solid rgba(0, 0, 0, .095);
+        }
+
+        .item--table > ul li:last-of-type {
+            border: none;
+        }
+
+        .price-tag, .action-tag {
+            font-weight: 500;
+            font-size: 2.3rem;
+            color: #343434;
+        }
+
+        .item--table > ul .primary--btn, .warning--btn {
+            margin: 32px auto;
+        }
+    </style>
+
+
+</body>
+</html>
