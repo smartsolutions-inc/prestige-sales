@@ -3,11 +3,34 @@
 }
 
 $colors: (
-    sample: #ddd,
+    sample: #00AE14,
     base: #0066ff,
     err: tomato,
-    warning: #FBBA32
+    warning: darken(#ebcb6a, 10%)
 );
+
+.signup {
+    background-color: map-get($colors, warning);
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    padding: 0 16px;
+    height: 42px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.login {
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    border: 1px solid map-get($colors, warning);
+    border-radius: 3px;
+    padding: 0 16px;
+    height: 42px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 // BUTTON
 .btn {
     padding: 0 16px;
@@ -16,7 +39,7 @@ $colors: (
         to left, map-get($colors, sample),
         darken(map-get($colors, sample), 10%)
     );
-    color: #333;
+    color: #fff;
     font-weight: 600;
     text-transform: uppercase;
     border-radius : 3px;
@@ -107,10 +130,21 @@ $colors: (
 
 // =============================================================================
 .li0:hover {
+    /*background : linear-gradient(
+        to left, map-get($colors, base),
+        darken(map-get($colors, base), 10%)
+    );
+    color: #fff;*/
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+
+
+.currency-map-section > ul li:first-of-type {
     background : linear-gradient(
         to left, map-get($colors, base),
         darken(map-get($colors, base), 10%)
     );
     color: #fff;
-    cursor: pointer;
 }

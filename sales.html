@@ -15,6 +15,11 @@
 
             <nav>
                 <img src="logo.svg" width="150px" alt="">
+
+                <div class="action-nav-pane">
+                    <button class="login">sign in</button>
+                    <button class="signup">sign up</button>
+                </div>
             </nav>
 
             <div class="nav-section">
@@ -103,20 +108,172 @@
             </div>
         </div>
 
+        <div class="info-pad">
+            <div class="info-txt">
+                <p>The price is calculated every 10 seconds</p>
+                <a href="http://preev.com">How is the price calculated?</a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="spc-hdr-tag">
+            <div class="currency-map-section">
+                <ul>
+                    <li class="li0">btc</li>
+                    <li class="li0">ltc</li>
+                    <li class="li0">eth</li>
+                </ul>
+            </div>
+            <div class="currency-map-section">
+                <ul>
+                    <li class="li0">usd</li>
+                    <li class="li0">eur</li>
+                    <li class="li0">gpa</li>
+                    <li class="li0">rub</li>
+                    <li class="li0">rd</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="trading__signals-sales">
+            <div class="item--table">
+                <ul>
+                    <li class="action-tag">
+                        Basic
+                    </li>
+                    <li class="benefits-tag">
+                        <span data-set-benefits> - 1 month signals </span>
+                        <br><br>
+                        <span data-set-benefits> - lower trading crypto price </span>
+                    </li>
+                    <li class="price-tag">
+                        <span data-set-price> B 0.005 </span>
+                    </li>
+                    <button class="primary--btn"> Get package </button>
+                </ul>
+            </div>
+            <div class="item--table">
+                <ul>
+                    <li class="action-tag">
+                        Enterprenaur
+                    </li>
+                    <li class="benefits-tag">
+                        <span data-set-benefits> - 3 month signals </span>
+                        <br><br>
+                        <span data-set-benefits> - lower trading crypto price </span>
+                    </li>
+                    <li class="price-tag">
+                        <span data-set-price> B 0.015 </span>
+                    </li>
+                    <div style="text-align:center;">
+                        <button class="primary--btn"> Get package </button>
+                    </div>
+                </ul>
+            </div>
+            <div class="item--table">
+                <ul>
+                    <li class="action-tag">
+                        Business
+                    </li>
+                    <li class="benefits-tag">
+                        <span data-set-benefits> - 6 month signals </span>
+                        <br><br>
+                        <span data-set-benefits> - lower trading crypto price </span>
+                    </li>
+                    <li class="price-tag">
+                        <span data-set-price> B 0.030 </span>
+                    </li>
+                    <div style="text-align:center;">
+                        <button class="primary--btn"> Get package </button>
+                    </div>
+                </ul>
+            </div>
+            <div class="item--table">
+                <ul>
+                    <li class="action-tag">
+                        Prestige
+                    </li>
+                    <li class="benefits-tag">
+                        <span data-set-benefits> - 1 year signals </span>
+                        <br><br>
+                        <span data-set-benefits> - lower trading crypto price </span>
+                    </li>
+                    <li class="price-tag">
+                        <span data-set-price> B 0.060 </span>
+                    </li>
+                    <div style="text-align:center;">
+                        <button class="warning--btn"> Get package </button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info-pad">
+            <div class="info-txt">
+                <p>The price is calculated every 10 seconds</p>
+                <a href="http://preev.com">How is the price calculated?</a>
+            </div>
+        </div>
+
+        <p style="text-align:center; width: 100%; font-size: 16px; color: #484848;">You can also input a custom amount: </p>
+        <br>
+
+        <div class="custom-table">
+            <input type="text" name="" value="">
+            <input type="text" name="" id="">
+            <button class="btn">sell</button>
+        </div>
+
     </div>
+
+
+
+
+
+
 
     <div class="footer-pad">
 
     </div>
 
     <style>
+
         html {
             font: 500 14px/150% 'Open Sans', sans-serif;
         }
 
+        .custom-table {
+            padding: 0 0 128px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .custom-table input {
+            margin: 0 8px;
+            border-radius: 2px;
+            height: 36px;
+            border: 0;
+            border: 1px solid #ddd;
+            padding: 0 8px;
+        }
+
         .footer-pad {
             width: 100%;
-            height: 400px;
+            height: 320px;
             background-color: var(--pax-color);
         }
 
@@ -130,6 +287,16 @@
             --pax-color:  #081221;
         }
 
+        .info-pad {
+            width: var(--base-width);
+            margin: 0 auto;
+            margin-bottom: 96px;
+            font-size: 14px;
+            color: #aaafb8;
+            padding: 32px 0;
+            text-align: center;
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -139,7 +306,7 @@
 
         .currency-map-section {
             width: 300px;
-            height: 54px;
+            height: 36px;
             border: 1px solid #ddd;
             border-radius: 3px;
             overflow: hidden;
@@ -159,7 +326,7 @@
             height: inherit;
             text-align: center;
             position: relative;
-            line-height: 54px;
+            line-height: 36px;
             text-transform: uppercase;
             font-weight: 600;
         }
@@ -179,7 +346,8 @@
             height: auto;
             margin: 0 auto;
             padding: 32px 0;
-            justify-content: center;
+            display: flex;
+            justify-content: space-between;
             text-align: center;
         }
 
@@ -211,6 +379,7 @@
             width: var(--base-width);
             height: 54px;
             margin-top: 96px;
+            font-size: 12px;
         }
 
         .nav-section ul {
@@ -237,6 +406,12 @@
             color: #343434;
         }
 
+        .action-nav-pane {
+            width: 180px;
+            display: flex;
+            justify-content: space-between;
+        }
+
         .trading__signals-sales {
             width: 100%;
             height: auto ;
@@ -247,7 +422,6 @@
             grid-gap: 48px;
             justify-content: center;
             position: relative;
-            overflow: hidden;
         }
 
         .item--table {
