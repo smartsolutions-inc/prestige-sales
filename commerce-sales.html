@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Sales system </title>
+    <link rel="stylesheet" href="components/lib/styles/css/group-all.css">
+    <link rel="stylesheet" href="sales.css">
+</head>
+<body>
+
+    <div class="sales--plans-modules">
+
+        <div class="headeger--ribbon">
+
+            <nav>
+                <img src="logo.svg" width="180px" alt="">
+
+                <div class="action-nav-pane">
+                    <button class="login">sign in</button>
+                    <button class="signup">sign up</button>
+                </div>
+            </nav>
+
+            <div class="nav-section">
+                <ul>
+                    <li> <a href="trading-signals.html">Trading signals</a> </li>
+                    <li> Crypto commerce </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="commerce" id="commerce">
+
+            <div class="section-assigner">
+                <ul class="map-section">
+                    <li class="item-section" onclick="toggleBuy();" id="buy-target">buy</li>
+                    <li class="item-section" onclick="toggleSell();" id="sell-target">sell</li>
+                </ul>
+            </div>
+
+            <script>
+                function toggleSell() {
+                    var sell = document.querySelector('#sell');
+                    var buy = document.querySelector('#buy');
+                    var bTarget = document.querySelector('#buy-target');
+                    var sTarget = document.querySelector('#sell-target');
+
+                    sell.style.display = "block";
+                    buy.style.display = "none";
+                    sTarget.style.borderBottom = "none";
+                    bTarget.style.borderBottom = "1px solid #aaa";
+                }
+
+                function toggleBuy() {
+                    var sell = document.querySelector('#sell');
+                    var buy = document.querySelector('#buy');
+                    var bTarget = document.querySelector('#buy-target');
+                    var sTarget = document.querySelector('#sell-target');
+
+                    sell.style.display = "none";
+                    buy.style.display = "block";
+                    bTarget.style.borderBottom = "none";
+                    sTarget.style.borderBottom = "1px solid #aaa";
+                }
+            </script>
+            <!---
+            *** BUYING ITEM TABLE
+            ***
+            --->
+
+            <div class="buy" id="buy">
+                <div class="spc-hdr-tag">
+                    <div class="currency-map-section">
+                        <ul>
+                            <li class="li0">btc</li>
+                            <li class="li0">ltc</li>
+                            <li class="li0">eth</li>
+                        </ul>
+                    </div>
+                    <div class="currency-map-section">
+                        <ul>
+                            <li class="li0">usd</li>
+                            <li class="li0">eur</li>
+                            <li class="li0">gpa</li>
+                            <li class="li0">rub</li>
+                            <li class="li0">rd</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!------>
+
+                <div class="trading__signals-sales">
+                    <div class="item--table">
+                        <ul>
+                            <li>
+                                <span style="font-size: 18px; color: #484848;">Get
+                                    <span data-set-currency="1"> 0.00725 BTC </span>
+                                </span>
+                                <p style="padding: 0; margin: 0; padding-top: 16px; font-size: 14px;"> For </p>
+                            </li>
+                            <li>
+                                <span style="font-weight:600;font-size: 24px; color: #484848;">
+                                    <span data-set-price> $100 </span>
+                                </span>
+                            </li>
+                            <button class="primary--btn"> buy </button>
+                        </ul>
+                    </div>
+                    <div class="item--table">
+                        <ul>
+                            <li>
+                                <span style="font-size: 18px; color: #484848;">Get
+                                    <span data-set-currency="1"> 0.00725 BTC </span>
+                                </span>
+                                <p style="padding: 0; margin: 0; padding-top: 16px; font-size: 14px;"> For </p>
+                            </li>
+                            <li>
+                                <span style="font-weight:600;font-size: 24px; color: #484848;">
+                                    <span data-set-price> $200 </span>
+                                </span>
+                            </li>
+                            <button class="primary--btn"> buy </button>
+                        </ul>
+                    </div>
+                    <div class="item--table">
+                        <ul>
+                            <li>
+                                <span style="font-size: 18px; color: #484848;">Get
+                                    <span data-set-currency="1"> 0.00725 BTC </span>
+                                </span>
+                                <p style="padding: 0; margin: 0; padding-top: 16px; font-size: 14px;"> For </p>
+                            </li>
+                            <li>
+                                <span style="font-weight:600;font-size: 24px; color: #484848;">
+                                    <span data-set-price> $400 </span>
+                                </span>
+                            </li>
+                            <button class="primary--btn"> buy </button>
+                        </ul>
+                    </div>
+                    <div class="item--table">
+                        <ul>
+                            <li>
+                                <span style="font-size: 18px; color: #484848;">Get
+                                    <span data-set-currency="1"> 0.00725 BTC </span>
+                                </span>
+                                <p style="padding: 0; margin: 0; padding-top: 16px; font-size: 14px;"> For </p>
+                            </li>
+                            <li>
+                                <span style="font-weight:600;font-size: 24px; color: #484848;">
+                                    <span data-set-price> $800 </span>
+                                </span>
+                            </li>
+
+                            <button class="primary--btn"> buy </button>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+                <div class="info-pad">
+                    <div class="info-txt">
+                        <p>The price is calculated every 10 seconds</p>
+                        <a href="http://preev.com">How is the price calculated?</a>
+                    </div>
+                </div>
+
+                <p style="text-align:center; width: 100%; font-size: 18px; color: #484848;">You can also input a custom amount: </p>
+                <br>
+
+                <div class="custom-table">
+                    <input type="text" style="height:48px;" name="" value="">
+                    <input type="text" style="height:48px;" name="" id="">
+                    <button class="primary--btn xl">buy</button>
+                </div>
+            </div>
+
+
+
+
+            <!---
+            *** SELLING ITEM TABLE
+            ***
+            --->
+
+
+
+            <div class="sell" id="sell">
+                <div class="spc-hdr-tag">
+                    <div class="currency-map-section sales">
+                        <ul>
+                            <li class="li0">btc</li>
+                            <li class="li0">ltc</li>
+                            <li class="li0">eth</li>
+                        </ul>
+                    </div>
+                    <div class="currency-map-section sales">
+                        <ul>
+                            <li class="li0">usd</li>
+                            <li class="li0">eur</li>
+                            <li class="li0">gpa</li>
+                            <li class="li0">rub</li>
+                            <li class="li0">rd</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!------>
+
+                <div class="trading__signals-sales">
+                    <div class="item--table">
+                        <ul>
+                            <li>
+                                <span style="font-size: 18px; color: #484848;">Get
+                                    <span data-set-currency="1"> 0.00725 BTC </span>
+                                </span>
+                                <p style="padding: 0; margin: 0; padding-top: 16px; font-size: 14px;"> For </p>
+                            </li>
+                            <li>
+                                <span style="font-weight:600;font-size: 24px; color: #484848;">
+                                    <span data-set-price> $100 </span>
+                                </span>
+                            </li>
+                            <button class="btn"> buy </button>
+                        </ul>
+                    </div>
+                    <div class="item--table">
+                        <ul>
+                            <li>
+                                <span style="font-size: 18px; color: #484848;">Get
+                                    <span data-set-currency="1"> 0.00725 BTC </span>
+                                </span>
+                                <p style="padding: 0; margin: 0; padding-top: 16px; font-size: 14px;"> For </p>
+                            </li>
+                            <li>
+                                <span style="font-weight:600;font-size: 24px; color: #484848;">
+                                    <span data-set-price> $200 </span>
+                                </span>
+                            </li>
+                            <button class="btn"> buy </button>
+                        </ul>
+                    </div>
+                    <div class="item--table">
+                        <ul>
+                            <li>
+                                <span style="font-size: 18px; color: #484848;">Get
+                                    <span data-set-currency="1"> 0.00725 BTC </span>
+                                </span>
+                                <p style="padding: 0; margin: 0; padding-top: 16px; font-size: 14px;"> For </p>
+                            </li>
+                            <li>
+                                <span style="font-weight:600;font-size: 24px; color: #484848;">
+                                    <span data-set-price> $400 </span>
+                                </span>
+                            </li>
+                            <button class="btn"> buy </button>
+                        </ul>
+                    </div>
+                    <div class="item--table">
+                        <ul>
+                            <li>
+                                <span style="font-size: 18px; color: #484848;">Get
+                                    <span data-set-currency="1"> 0.00725 BTC </span>
+                                </span>
+                                <p style="padding: 0; margin: 0; padding-top: 16px; font-size: 14px;"> For </p>
+                            </li>
+                            <li>
+                                <span style="font-weight:600;font-size: 24px; color: #484848;">
+                                    <span data-set-price> $800 </span>
+                                </span>
+                            </li>
+
+                            <button class="btn"> buy </button>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+                <div class="info-pad">
+                    <div class="info-txt">
+                        <p>The price is calculated every 10 seconds</p>
+                        <a href="http://preev.com">How is the price calculated?</a>
+                    </div>
+                </div>
+
+                <p style="text-align:center; width: 100%; font-size: 18px; color: #484848;">You can also input a custom amount: </p>
+                <br>
+
+                <div class="custom-table">
+                    <input type="text" style="height:48px;" name="" value="">
+                    <input type="text" style="height:48px;" name="" id="">
+                    <button class="btn xl">buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="footer-pad">
+
+    </div>
+
+
+</body>
+</html>

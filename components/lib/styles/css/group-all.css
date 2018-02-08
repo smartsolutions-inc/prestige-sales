@@ -11,14 +11,15 @@ body {
   --base-color: #0066ff; }
 
 .signup {
-  background-color: #e5bb3d;
+  background: 0 0;
   color: #fff;
   border: 0;
   border-radius: 3px;
   padding: 0 16px;
   height: 42px;
   text-transform: uppercase;
-  font-weight: 600; }
+  font-weight: 600;
+  outline: 0; }
 
 .login {
   background-color: transparent;
@@ -29,7 +30,8 @@ body {
   padding: 0 16px;
   height: 42px;
   text-transform: uppercase;
-  font-weight: 600; }
+  font-weight: 600;
+  outline: 0; }
 
 .btn, .err--btn, .primary--btn, .warning--btn {
   padding: 0 16px;
@@ -85,5 +87,51 @@ body {
 .currency-map-section > ul li:first-of-type {
   background: linear-gradient(to left, #06f, #0052cc);
   color: #fff; }
+
+.sales > ul li:first-of-type {
+  background: linear-gradient(to left, #00ae14, #007b0e);
+  color: #fff; }
+
+.nav-section > ul li > a {
+  text-decoration: none;
+  color: #fff; }
+
+.section-assigner {
+  width: var(--base-width);
+  margin: 0 auto;
+  height: auto;
+  padding: 32px 0; }
+
+.section-assigner .map-section {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #aaa;
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.section-assigner .map-section .item-section {
+  padding: 0 32px;
+  margin: 0 4px;
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  background-color: #f0f0f0;
+  border: 1px solid #aaa;
+  border-bottom: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin-bottom: -1px;
+  cursor: pointer; }
+
+.section-assigner .map-section .item-section:last-of-type {
+  border-bottom: 1px solid #aaa; }
+
+.sell {
+  display: none; }
 
 /*# sourceMappingURL=group-all.css.map */
